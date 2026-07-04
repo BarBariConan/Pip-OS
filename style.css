@@ -176,6 +176,11 @@ body, .mapContainer {
     text-shadow: 0 0 12px #00ff00;
 }
 
+#welcomeImage {
+    width: 100%;
+    height: auto;
+}
+
 @keyframes pinShake {
 
     0% { transform: translateX(0); }
