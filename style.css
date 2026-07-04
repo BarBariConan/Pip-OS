@@ -176,6 +176,10 @@ body, .mapContainer {
     text-shadow: 0 0 12px #00ff00;
 }
 
+#welcome {
+    width: 615px;
+}
+
 #welcomeImage {
     width: auto;
     height: auto;
