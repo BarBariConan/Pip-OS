@@ -177,8 +177,10 @@ body, .mapContainer {
 }
 
 #welcomeImage {
-    width: 100%;
+    width: 80%;
     height: auto;
+    display: block;
+    margin: 15px auto;
 }
 
 @keyframes pinShake {
