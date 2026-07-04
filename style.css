@@ -119,14 +119,6 @@ body, .mapContainer {
     height: 400px;
 }
 
-#pin {
-    position: absolute;
-    width: 180px;
-    left: 160px;
-    top: 60px;
-
-    transform-origin: bottom center;
-}
 
 #lock {
     position: absolute;
@@ -181,11 +173,10 @@ body, .mapContainer {
 }
 
 #welcomeImage {
-    width: auto;
-    height: auto;
     display: block;
+    width: 90%;
+    height: auto;
     margin: 15px auto;
-    padding: 15px;
 }
 
 @keyframes pinShake {
