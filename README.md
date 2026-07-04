@@ -1,2 +1,2 @@
 # OS
-My OS im making for hackclub stardance
+My FO4 Pip-Boy inspired OS im making for hackclub stardance

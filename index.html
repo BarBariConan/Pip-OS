@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bodystyle">
+
+
+    <div class="window" id="welcome" style="top: 100px; left: 200px;">
+
+        <div class="windowheader" id="welcomeheader">
+            <p>✋︎Grab Here✋︎</p>
+            <div class="closebutton" id="welcomeclose">✖</div>
+        </div>
+
+        <div class="windowContent">
+
+            <h1>Welcome to my Pip-Boy inspired OS</h1>
+
+            <h2>Introduction:</h2>
+
+            <p>Hello, this is the onboarding screen for my W.I.P. web based OS:</p>
+
+            <p><strong>FO4 Pip-boy OS</strong></p>
+
+            <img src="https://i.ibb.co/tww0V32T/l-intro-1712684268.jpg">
+
+            <p>This is my attempt at making a web based OS that looks and feels like Fallout 4 Pip-Boy.</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="topBar">
+
+        <p id="timeElement">25/6/2077 6:16 PM</p>
+
+        <p id="Tip"></p>
+
+        <p style="cursor:pointer;">PIP-OS(R)</p>
+
+        <p id="Location"></p>
+
+        <p>V1.0.0.0.0</p>
+
+    </div>
+
+
+
+    <div class="icon" id="welcomeopen" style="cursor:pointer; position:absolute; top:120px; left:40px;">
+        <img src="https://i.ibb.co/S4gDsBrd/Copy-of-Vault-Tec-Notes-1.png" width="76">
+        <p>Welcome</p>
+    </div>
+
+    <div class="icon" id="notesIcon" style="cursor:pointer; position:absolute; top:240px; left:40px;">
+        <img src="https://i.ibb.co/JwLpHm2X/Vault-Tec-Notes-1.png" width="76">
+        <p>Vault Notes</p>
+    </div>
+
+    <div class="icon" id="mapIcon" style="cursor:pointer; position:absolute; top:360px; left:40px;">
+        <img src="https://i.ibb.co/hkWTT4G/Untitled-design-3.png" alt="Untitled-design-3" width="76">
+        <p>Map</p>
+    </div>
+
+        <div class="icon" id="lockIcon" style="cursor:pointer; position:absolute; top:480px; left:40px;">
+        <img src="https://i.ibb.co/WWYbpgLC/Untitled-design-2.png" width="76">
+        <p>Lockpicker</p>
+    </div>
+
+
+    <div class="window" id="notesWindow" style="top:200px; left:200px;">
+
+        <div class="windowheader" id="notesWindowheader">
+            <p>Vault Notes</p>
+            <div class="closebutton" id="notesclose">✖</div>
+        </div>
+
+        <div class="windowContent">
+
+            <textarea id="notesText" style="
+                width: 96%;
+                height: 250px;
+                background: #001a00;
+                color: #00ff00;
+                border: 1px solid #00ff00;
+                outline: none;
+                font-family: monospace;
+                resize: none;
+                padding: 10px;
+            "></textarea>
+
+        </div>
+
+    </div>
+
+
+    <div class="window" id="mapWindow" style="top:180px; left:260px;">
+
+        <div class="windowheader" id="mapWindowheader">
+            <p>The Commonwealth</p>
+            <div class="closebutton" id="mapclose">✖</div>
+        </div>
+
+        <div class="windowContent mapContainer">
+
+            <img id="mapImage"
+                 src="https://i.ibb.co/fzbW2NSC/Fo4-pip-map.webp"
+                 width="100%">
+
+        </div>
+    </div>
+
+
+    <div class="window" id="lockWindow" style="top: 200px; left: 150px;">
+
+        <div class="windowheader" id="lockWindowheader">
+            <p>Lockpicker</p>
+            <div class="closebutton" id="lockClose">✖</div>
+        </div>
+
+        <div class="windowContent">
+
+            <div id="lockGame">
+
+                <img id="lock"
+                src="https://i.ibb.co/zW9c3mS3/Untitled-design-4.png"
+                    alt="Lock">
+
+                <img id="screwdriver"
+                    src="https://i.ibb.co/dscD7SbK/Untitled-design-8.png"
+                    alt="Screwdriver">
+
+                 <img id="pin"
+                    src="https://i.ibb.co/w199QPv/cropped-bobbypin.png"
+                    alt="Bobby Pin">
+
+                <div id="pinHealth">PIN HP: █████</div>
+
+
+                <div id="unlockText">LOCK OPENED</div>
+
+                <p>How To Play:<br>Use the left<br>and right arrow<br>keys to rotate<br>the bobby pin<br>and space to try<br>lockpick it.<br>depending on how<br>close you are<br>the lock will shake<br>more. You will know<br>you have successfully<br>picked the lock when<br>the app closes</p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
