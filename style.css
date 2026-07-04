@@ -177,7 +177,7 @@ body, .mapContainer {
 }
 
 #welcomeImage {
-    width: 80%;
+    width: auto;
     height: auto;
     display: block;
     margin: 15px auto;
