@@ -107,7 +107,7 @@ body {
     user-select: none;
     pointer-events: none;
     width: 900px;
-    transform-origin: center;
+    transform-origin: top left;
 }
 
 body, .mapContainer {

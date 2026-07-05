@@ -152,6 +152,18 @@ window.addEventListener("DOMContentLoaded", () => {
             imgX += dx;
             imgY += dy;
 
+            const scaledWidth = mapImage.offsetWidth * zoom;
+            const scaledHeight = mapImage.offsetHeight * zoom;
+
+            const containerWidth = mapContainer.clientWidth;
+            const containerHeight = mapContainer.clientHeight;
+
+            const minX = containerWidth - scaledWidth;
+            const minY = containerHeight - scaledHeight;
+
+            imgX = Math.min(0, Math.max(minX, imgX));
+            imgY = Math.min(0, Math.max(minY, imgY));
+
             mapImage.style.left = imgX + "px";
             mapImage.style.top = imgY + "px";
         });
@@ -159,14 +171,29 @@ window.addEventListener("DOMContentLoaded", () => {
 
         mapContainer.addEventListener("wheel", (e) => {
         e.preventDefault();
-   
-        zoom += (e.deltaY < 0) ? 0.1 : -0.1;
 
-        if (zoom < 0.5) zoom = 0.5;
+            zoom += (e.deltaY < 0) ? 0.1 : -0.1;
+
+            if (zoom < 0.5) zoom = 0.5;
         if (zoom > 3) zoom = 3;
 
         mapImage.style.transform = `scale(${zoom})`;
-    });
+
+        const scaledWidth = mapImage.offsetWidth * zoom;
+        const scaledHeight = mapImage.offsetHeight * zoom;
+
+        const containerWidth = mapContainer.clientWidth;
+        const containerHeight = mapContainer.clientHeight;
+
+        const minX = containerWidth - scaledWidth;
+        const minY = containerHeight - scaledHeight;
+
+        imgX = Math.min(0, Math.max(minX, imgX));
+        imgY = Math.min(0, Math.max(minY, imgY));
+
+        mapImage.style.left = imgX + "px";
+        mapImage.style.top = imgY + "px";
+        });
     }
 
     const lockWindow = document.getElementById("lockWindow");
