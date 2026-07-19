@@ -194,3 +194,8 @@ body, .mapContainer {
     100% { transform: translateX(0); }
 
 }
+
+#radioWindow {
+    width: 500px;
+    height: 450px;
+}

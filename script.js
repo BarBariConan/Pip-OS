@@ -212,7 +212,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (lockWindow) dragElement(lockWindow);
 
 
-});
+
 
 const messages = [
 
@@ -364,3 +364,25 @@ function updatePinHealth() {
         "PIN HP: " + "█".repeat(pinHealth) + "░".repeat(5 - pinHealth);
 
 }
+
+
+
+    const radioWindow = document.getElementById("radioWindow");
+    const radioClose = document.getElementById("radioClose");
+    const radioContainer = document.getElementById(".radioContainer");
+    const radioIcon = document.getElementById("radioIcon");
+
+    if (radioIcon && radioWindow) {
+        radioIcon.onclick = () => openWindow(radioWindow);
+    }
+
+    if (radioClose && radioWindow) {
+        radioClose.onclick = () => closeWindow(radioWindow);
+    }
+
+    if (radioWindow) dragElement(radioWindow);
+
+
+
+
+});
