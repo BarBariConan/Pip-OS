@@ -371,6 +371,7 @@ function updatePinHealth() {
     const radioClose = document.getElementById("radioClose");
     const radioContainer = document.getElementById(".radioContainer");
     const radioIcon = document.getElementById("radioIcon");
+    const audio = document.getElementById("radioPlayer");
 
     if (radioIcon && radioWindow) {
         radioIcon.onclick = () => openWindow(radioWindow);
@@ -382,7 +383,10 @@ function updatePinHealth() {
 
     if (radioWindow) dragElement(radioWindow);
 
-
+    audio.addEventListener("loadedmetadata", () => {
+        audio.currentTime = Math.random() * audio.duration;
+        audio.play();
+        })
 
 
 });
